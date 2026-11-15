@@ -112,9 +112,18 @@ git add git_commands.txt
 git commit -m "Add git_commands.txt documenting all commands used"
     Stages and commits this documentation file.
 
-git push
-    Pushes the new commit to the already-configured upstream (origin/main).
-
 git add git_commands.txt
 git commit -m "Update git_commands.txt with the actual GitHub repository URL"
     Records the correction of the remote URL placeholder in this file.
+
+    (Both commits above were made before the first push, so they were
+    uploaded to GitHub by "git push -u origin main" in Step 5.)
+
+git add git_commands.txt
+git commit -m "Correct the push order in git_commands.txt"
+    Records this correction, so the documented push matches the order
+    in which the commands were actually run.
+
+git push
+    Pushes the new commit to the already-configured upstream (origin/main).
+    No branch name is needed because -u was used in Step 5.
