@@ -93,7 +93,7 @@ STEP 5 - GITHUB INTEGRATION
 ---------------------------------------------------------------------
 (Public repository created on GitHub first, empty, with no README.)
 
-git remote add origin https://github.com/<username>/git-workflow-assignment.git
+git remote add origin https://github.com/LAKSHYAMEWARA0025/git-workflow-assignment.git
     Links the local repository to the GitHub repository under the name "origin".
 
 git remote -v
@@ -114,3 +114,7 @@ git commit -m "Add git_commands.txt documenting all commands used"
 
 git push
     Pushes the new commit to the already-configured upstream (origin/main).
+
+git add git_commands.txt
+git commit -m "Update git_commands.txt with the actual GitHub repository URL"
+    Records the correction of the remote URL placeholder in this file.
